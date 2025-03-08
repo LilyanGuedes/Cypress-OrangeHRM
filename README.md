@@ -1,1 +1,1 @@
-# Cypress---OrangeHRM
+# Cypress-OrangeHRM
