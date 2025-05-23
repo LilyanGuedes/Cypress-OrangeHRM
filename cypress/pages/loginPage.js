@@ -7,7 +7,7 @@ export class LoginPage {
       wrongCredentialAlert: '.oxd-alert',
     }
 
-    return selectors
+    return selectors;
   }
 
   accessLoginPage() {
@@ -18,5 +18,9 @@ export class LoginPage {
     cy.get(this.selectorList().usernameField).type(username)
     cy.get(this.selectorList().passwordField).type(password)
     cy.get(this.selectorList().loginButton).click()
+  }
+
+  checkAcessInvalid() {
+    cy.get(this.selectorList().wrongCredentialAlert)
   }
 }
